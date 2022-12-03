@@ -1,0 +1,71 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-62738a: #62738A;
+    --unnamed-color-104994: #104994;
+    --unnamed-color-00eeff: #00EEFF;
+    --unnamed-color-707070: #707070;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-888888: #888888;
+    --unnamed-color-f2f2f2: #F2F2F2;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-ff805c: #FF805C;
+    --unnamed-color-0056ff: #0056FF;
+    --unnamed-color-cddaf5: #CDDAF5;
+    --unnamed-color-070303: #070303;
+
+    /* Font Sizes */
+    --header-fontsize: 2.7rem;
+
+    /* Fonts: */
+    --OpenSans: 'Open Sans', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+            /* Header Section */
+.menu-content {
+    width: 100vw;
+    height: 21rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 2rem 0.1rem var(--unnamed-color-104994);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-menu {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-a {
+    font-size: var(--header-fontsize);
+    width: min-content;
+    text-transform: uppercase;
+    color: var(--unnamed-color-62738a);
+    font-family: var(--OpenSans);
+    font-weight: 700;
+}
