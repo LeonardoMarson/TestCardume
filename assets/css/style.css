@@ -24,6 +24,9 @@
     --about-us-h1: 2.2rem;
     --about-us-h2: 4.6rem;
     --about-us-h3: 2rem;
+    --services-h1: 4.4rem;
+    --services-p: 2rem;
+    --services-h2: 2.8rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
@@ -194,5 +197,71 @@ nav {
 }
 
             /*Main section */
+.services{
+    width: 100%;
+    height: 73.9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services img{
+    width: 14.77rem;
+    height: 1.29rem;
+    margin-top: 8.5rem;
+    margin-bottom: 0.81rem;
+}
+
+.services-text h1{
+    text-transform: uppercase;
+    font-family: var(--OpenSans);
+    font-weight: 700;
+    font-size: var(--services-h1);
+    color: var(--unnamed-color-0056ff);
+    margin-bottom: 0.8rem;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.services-text p{
+    font-family: var(--Roboto);
+    font-size: var(--services-p);
+    text-align: center;
+    letter-spacing: 0px;
+    color: var(--unnamed-color-888888);
+    width: 85rem;
+    height: 6.4rem;
+    line-height: 3rem;
+}
+
+.services-demonstration{
+    display: flex;
+    align-items: center;
+    gap: 3.1rem;
+}
+
+.services-banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-banners img{
+    margin-top: 3.5rem;
+    width: 40.7rem;
+    height: 33rem;
+    margin-bottom: 0.9rem;
+}
+
+.services-banners h2{
+    font-family: var(--OpenSans);
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: var(--unnamed-color-62738a);
+    font-size: var(--services-h2);
+}
+
+
 
 
