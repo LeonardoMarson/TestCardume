@@ -13,12 +13,17 @@
     --unnamed-color-0056ff: #0056FF;
     --unnamed-color-cddaf5: #CDDAF5;
     --unnamed-color-070303: #070303;
+    --unnamed-color-00B0FF: #00B0FF;
 
     /* Font Sizes */
     --header-fontsize: 2.7rem;
+    --front-cover-h1: 8rem; 
+    --front-cover-p: 3rem;
+    --front-cover-button: 2.6rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
+    --Dancing-Script: 'Dancing Script', cursive;
 
 }
 
@@ -43,7 +48,8 @@ li {
 
             /* Header Section */
 .menu-content {
-    width: 100vw;
+    margin: 0;
+    width: 100%;
     height: 21rem;
     display: flex;
     justify-content: space-around;
@@ -68,4 +74,60 @@ nav {
     color: var(--unnamed-color-62738a);
     font-family: var(--OpenSans);
     font-weight: 700;
+    
+}
+
+/* Main Section front-cover */
+.front-cover{
+    height: 87rem;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-cover h1{
+    font-size: var(--front-cover-h1);
+    width:fit-content;
+    height: min-content;
+    color: var(--unnamed-color-ffffff);
+    font-family: var(--Dancing-Script);
+    text-align: center;
+    line-height: 6rem;
+    padding: 2rem;
+}
+
+.front-cover p{
+    font-size: var(--front-cover-p);
+    width: fit-content;
+    color: var(--unnamed-color-ffffff);
+    font-family: var(--OpenSans);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4.2rem;
+}
+
+.front-cover a{
+    background-color: var(--unnamed-color-ffffff);
+    border: 3px solid var(--unnamed-color-ffffff);
+    border-radius: 3.8rem;
+    color: var(--unnamed-color-00B0FF);
+    padding: 0.9rem 4.5rem;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: var(--front-cover-button);
+    font-family: var(--OpenSans);
+    font-weight: 800;
+    text-transform: lowercase;
+}
+
+.front-cover a:hover{
+    background-color: var(--unnamed-color-00B0FF);
+    color: var(--unnamed-color-ffffff);
 }
