@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,10 @@
     <title>Cardume Digital - Criação de sites de alta performance</title>
 </head>
 <body>
+
+    <!--  -->
+    <script src="assets/js/script.js" defer></script>
+
     <header id="header" class="menu-content">
             <div>
                 <a href="#header"><img src="assets/images/logo-cabecalho.svg" alt="Logo da empresa"></a>
@@ -74,7 +78,51 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h1>Solicite um Orçamento</h1>
+                <p>Envie-nos uma mensagem ou entre em contato através de nossos canais de atendimento</p>
+            </div>
+            <div>
+                <form action="" id="contact-form">
+                    <div class="form-fields">
+                        <label for="nome" class="label-field">Nome *</label>
+                        <input type="text" id="nome" class="input-field">
+                    </div>
+                    <div class="form-fields">
+                        <label for="cidade" class="label-field">Cidade/UF</label>
+                        <input type="text" id="cidade" class="input-field">
+                    </div>
+                    <div class="form-fields">
+                        <label for="telefone" class="label-field">Telefone *</label>
+                        <input type="number" id="telefone" class="input-field">
+                    </div>
+                    <div class="form-fields">
+                        <label for="email" class="label-field">E-mail</label>
+                        <input type="email" id="email" class="input-field">
+                    </div>
+                    
+                    <div class="form-fields">
+                        <label for="textarea" class="label-field">Mensagem</label>
+                        <textarea id="textarea" name="" class=" input-field" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="accept">
+                        <label for="accept">Ao informar meus dados, eu concordo com a 
+                            <a href="#contact">Política de Privacidade</a> 
+                        </label>
+                    </div>
+                    
+                    <input type="submit">
+                </form>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

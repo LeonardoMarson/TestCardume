@@ -27,6 +27,8 @@
     --services-h1: 4.4rem;
     --services-p: 2rem;
     --services-h2: 2.8rem;
+    --contact-h1: 6rem;
+    --contact-p: 2rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
@@ -97,6 +99,13 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+/* .front-cover::before{
+    position: absolute;
+    display: block;
+    top: 0;
+    background:linear-gradient(to right, rgba(24, 222, 111, 0.5), rgba(255, 222, 111, 0.5));
+} */
 
 .front-cover h1{
     font-size: var(--front-cover-h1);
@@ -196,7 +205,7 @@ nav {
     padding-bottom: 3rem;
 }
 
-            /*Main section */
+            /*Main section services*/
 .services{
     width: 100%;
     height: 73.9rem;
@@ -261,6 +270,70 @@ nav {
     color: var(--unnamed-color-62738a);
     font-size: var(--services-h2);
 }
+
+            /*Main section contact*/
+.contact{
+    width: 100%;
+    height: 83.2rem;
+    background: transparent linear-gradient(269deg, var(--unnamed-color-ffffff) 0%, var(--unnamed-color-DFE7F5) 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 5.4rem;
+    margin-bottom: 2.2rem;
+}
+.contact-text h1{
+    text-align: left;
+    letter-spacing: 0px;
+    font-size: var(--contact-h1);
+    font-family: var(--Dancing-Script);
+    font-weight: 700;
+    color: var(--unnamed-color-0056ff);
+}
+
+.contact-text p{
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: var(--Roboto);
+    color: var(--unnamed-color-62738a);
+    font-size: var(--contact-p);
+    height: 6.4rem;
+}
+
+#contact-form{
+    width: 75.2rem;
+    height: 51.2rem;
+    margin-left: 31.3rem;
+    display: grid;
+}
+
+.form-fields{
+    position: relative;
+}
+
+.form-fields label{
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    transition: all 0.3s;
+}
+
+.active {
+    transform: translate(-0.5rem, -1.8rem);
+}
+
+.fodase {
+    transform: translate(-0.5rem, -1.8rem);
+}
+
+
 
 
 
