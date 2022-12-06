@@ -29,6 +29,9 @@
     --services-h2: 2.8rem;
     --contact-h1: 6rem;
     --contact-p: 2rem;
+    --form-text: 2rem;
+    --form-text-privacy: 1.6rem;
+    --form-text-button: 2.6rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
@@ -310,27 +313,103 @@ nav {
 #contact-form{
     width: 75.2rem;
     height: 51.2rem;
-    margin-left: 31.3rem;
-    display: grid;
+    /* margin-left: 31.3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-content: flex-start;
 }
 
 .form-fields{
     position: relative;
+    width: 36rem;
+    height: 5.2rem;
+    flex: 1 1 auto;
 }
 
 .form-fields label{
     position: absolute;
-    left: 0.5rem;
-    top: 0.5rem;
     transition: all 0.3s;
 }
 
-.active {
-    transform: translate(-0.5rem, -1.8rem);
+.form-fields label, .form-fields input, .form-fields textarea{
+    font-family: var(--OpenSans);
+    font-weight: 400;
+    font-size: var(--form-text);
+    color: var(--unnamed-color-62738a);
+    padding: 1.1rem 0 1.4rem 1.7rem;
 }
 
-.fodase {
-    transform: translate(-0.5rem, -1.8rem);
+.form-fields input, .form-fields textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+.form-fields input:focus, .form-fields textarea:focus{
+    outline: none;
+}
+
+#textarea-field{
+    width: 50rem;
+    height: 20rem;
+}
+
+#check-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input#accept{
+    position: relative;
+    width: 2.8rem;
+    height: 2.8rem;
+    appearance: none;
+    background-color: var(--unnamed-color-ffffff);
+}
+
+input#accept:checked::after{
+    justify-content: center;
+    content: '\2714';
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    left: 0.7rem;
+    color: var(--unnamed-color-0056ff);
+}
+label[for='accept']{
+    font-size: var(--form-text-privacy);
+    font-family: var(--Roboto);
+    color: var(--unnamed-color-62738a);
+
+}
+
+label[for='accept'] a{
+    text-decoration: underline;
+    color: var(--unnamed-color-62738a);
+}
+
+label[for='accept'] a:hover{
+    color: var(--unnamed-color-00B0FF);
+}
+
+#form-button{
+    border: none;
+    padding: 0.9rem 5.7rem;
+    background-color: var(--unnamed-color-00B0FF);
+    color: var(--unnamed-color-ffffff);
+    border-radius: 3.8rem;
+    text-transform: lowercase;
+    font-size: var(--form-text-button);
+    font-family: var(--OpenSans);
+    font-weight: 800;
+}
+
+.active {
+    transform: translate(-1.7rem, -4rem);
 }
 
 
