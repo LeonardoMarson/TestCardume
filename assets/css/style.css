@@ -33,6 +33,7 @@
     --form-text-privacy: 1.6rem;
     --form-text-button: 2.6rem;
     --elements-contact-size: 2.6rem;
+    --networks-text: 3.6rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
@@ -69,6 +70,7 @@ li {
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 0 2rem 0.1rem var(--unnamed-color-104994);
+    background-color: var(--unnamed-color-ffffff);
 }
 
 nav {
@@ -93,6 +95,7 @@ nav {
 
             /* Main Section front-cover */
 .front-cover{
+    margin-top: 1rem;
     height: 87rem;
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
@@ -104,12 +107,12 @@ nav {
     align-items: center;
 }
 
-/* .front-cover::before{
+.front-cover::before{
     position: absolute;
     display: block;
     top: 0;
     background:linear-gradient(to right, rgba(24, 222, 111, 0.5), rgba(255, 222, 111, 0.5));
-} */
+}
 
 .front-cover h1{
     font-size: var(--front-cover-h1);
@@ -160,12 +163,12 @@ nav {
     background: transparent linear-gradient(89deg, var(--unnamed-color-ffffff) 0%, var(--unnamed-color-DFE7F5) 100%) 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 6.9rem;
 }
 
 .About-Us-Image{
     margin-top: 5rem;
-    margin-left: 30rem;
     width: 66rem;
     height: 58.7rem;
     
@@ -175,13 +178,12 @@ nav {
     width: 58.2rem;
     height: 40.2rem;
     margin-top: 13.6rem;
-    margin-right: 31.5rem;
 }
 
 .About-Us-Text h1{
     width: max-content;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;
     color: var(--unnamed-color-62738a);
     text-transform: uppercase;
     font-size: var(--about-us-h1);
@@ -207,6 +209,9 @@ nav {
     color: var(--unnamed-color-62738a);
     font-family: var(--Roboto);
     padding-bottom: 3rem;
+}
+#verifica{
+    display: none;
 }
 
             /*Main section services*/
@@ -314,7 +319,6 @@ nav {
 #contact-form{
     width: 75.2rem;
     height: 51.2rem;
-    /* margin-left: 31.3rem; */
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -458,20 +462,30 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 64.2rem; */
+    gap: 64.2rem;
     background: transparent linear-gradient(90deg, var(--unnamed-color-0056ff) 0%, var(--unnamed-color-00eeff) 100%) 0% 0% no-repeat padding-box;
-}
-
-footer img{
-    width: 40.5rem;
-    height: 6.95rem;
 }
 
 .social-networks{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: min-content;
+    gap: 2.5rem;
+}
+
+#networks-text h1{
+    font-size: var(--networks-text);
+    font-family: var(--OpenSans);
+    font-weight: 700;
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+}
+
+#networks-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.45rem;
 }
 
 

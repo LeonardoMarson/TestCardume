@@ -13,6 +13,7 @@
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     
     <!-- Title bar icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.cardume.digital/public/sites/cardume.digital/favicons/favicon-16x16.png">
@@ -25,27 +26,29 @@
     <script src="assets/js/script.js" defer></script>
 
     <header id="header" class="menu-content">
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
             <div>
-                <a href="#header"><img src="assets/images/logo-cabecalho.svg" alt="Logo da empresa"></a>
+                <a href="#header" ><img src="assets/images/logo-cabecalho.svg" alt="Logo da empresa"></a>
             </div>
             
             <nav >
                 <ul class="header-menu">
-                    <li><a class="nav-a" href="#sobre">Sobre</a></li>
-                    <li><a class="nav-a" href="#servicos">Serviços</a></li>
-                    <li><a class="nav-a" href="#contato">Contato</a></li>
+                    <li><a class="nav-a" href="#About-us">Sobre</a></li>
+                    <li><a class="nav-a" href="#Services">Serviços</a></li>
+                    <li><a class="nav-a" href="#contact">Contato</a></li>
                 </ul>
             </nav>
     </header>
     <main>
         <section class="front-cover">
-
+                <!-- <img src="assets/images/banner.jpg" alt=""> -->
                 <h1>Tenha um site<br>rápido, seguro e otimizado</h1>
                 <p>Solicite um orçamento sem compromisso agora mesmo</p>
                 <a href="#header">Solicitar</a>
 
         </section>
-        <section class="About-Us"> 
+        <section class="About-Us" id="About-us"> 
             <div class="About-Us-Image">
                 <img src="assets/images/homem-sobre.png" alt="Imagem ilustrando o contexto">
             </div>
@@ -54,10 +57,11 @@
                 <h2>Conheça a Cardume Digital</h2>
                 <p>A Cardume Digital é uma empresa de tecnologia focada no desenvolvimento de sites, com profissionais qualificados e mais de 8 anos de mercado.</p>
                 <p>Estamos localizados na serra gaúcha, mas atendemos<br> empresas de qualquer lugar do mundo.</p>
-                <p>Nesse imenso oceano que é a internet, mais de 200 empresas já alcançaram resultados incríveis nadando ao nosso lado.</p>                
+                <p>Nesse imenso oceano que é a internet, mais de 200 empresas já alcançaram resultados incríveis nadando ao nosso lado.</p>   
+                <p id="verifica">Junte-se à Cardume e explore um oceano de oportunidades!</p>             
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="Services">
             <img src="assets/images/onda.svg" alt="Imagem de ondas">
             <div class="services-text">
                 <h1>Criação de sites responsivos</h1>
@@ -146,15 +150,23 @@
         </section>
     </main>
     <footer>
-        <img src="assets/images/logo-rodape.svg" alt="Logo rodapé Cardume Digital">
-        <div>
-            <h1>siga-nos</h1>
-            <a href="">
-                <img src="assets/images/icone-facebook.svg" alt="Facebook" title="Abrir o Facebook">
-            </a>
-            <a href="">
-                <img src="assets/images/icone-instagram.svg" alt="Instagram" title="Abrir o Instagram">
-            </a>
+        <img id="img-logo-footer" src="assets/images/logo-rodape.svg" alt="Logo rodapé Cardume Digital">
+        <div class="social-networks">
+            <div id="networks-text">
+                <h1>siga-nos</h1>
+            </div>
+            <div id="networks-links">
+                <div>
+                    <a href="">
+                        <img src="assets/images/icone-facebook.svg" alt="Facebook" title="Abrir o Facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="assets/images/icone-instagram.svg" alt="Instagram" title="Abrir o Instagram">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
