@@ -32,6 +32,7 @@
     --form-text: 2rem;
     --form-text-privacy: 1.6rem;
     --form-text-button: 2.6rem;
+    --elements-contact-size: 2.6rem;
 
     /* Fonts: */
     --OpenSans: 'Open Sans', sans-serif;
@@ -412,6 +413,66 @@ label[for='accept'] a:hover{
     transform: translate(-1.7rem, -4rem);
 }
 
+.content-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 11.75rem;
+}
+
+.elements-contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: 6.6rem;
+    width: fit-content;
+}
+
+.elements-contact a img{
+    width: 6.6rem;
+    height: 100%;
+    border-radius: 3.5rem;
+    background-color: red;
+}
+
+.elements-contact a p{
+    color: var(--unnamed-color-62738a);
+    font-size: var(--elements-contact-size);
+    font-family: var(--OpenSans);
+    font-weight: 700;
+}
+
+            /*Main section services*/
+.maps{
+    height: 70.7rem;
+}
+
+.maps iframe{
+    height: 100%;
+    width: 100%;
+}
+
+            /*Footer*/
+footer{
+    height: 42.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 64.2rem; */
+    background: transparent linear-gradient(90deg, var(--unnamed-color-0056ff) 0%, var(--unnamed-color-00eeff) 100%) 0% 0% no-repeat padding-box;
+}
+
+footer img{
+    width: 40.5rem;
+    height: 6.95rem;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+}
 
 
 
