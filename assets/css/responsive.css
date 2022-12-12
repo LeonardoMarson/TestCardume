@@ -4,61 +4,72 @@
     --media-font-30: 3rem;
     --media-font-40: 4rem;
 
-        /* Colors */
-    --unnamed-color-0056ff: #0056FF;
 }
 
 @media(max-width: 576px){
     body{
-        width: 100vw;
+        width: 100%;
     }
-    /* .menu-content{
+    .menu-content{
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        height: 115vh;
+        z-index: 2;
         width: 100vw;
-        flex-direction: column;
-        justify-content: center;
-        gap:6rem;
-    }
-    .menu-content{
-        display: none;
     }
     .header-menu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .close-menu-label::after {
-        content: '☰';
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        background: var(--primary-color);
-        color: var(--white-color);
-        font-size: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        padding: 0.5rem;
-        cursor: pointer;
-      }
     
-      .close-menu:checked~.menu {
-        display: block;
-      }
-    
-      .close-menu:checked~.close-menu-label::after {
-        content: '×';
-      } */
+    nav{
+      /* visibility: hidden; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: #ffffff;
+      display: none;
+    }
+
+    .close-menu-label::after{
+      content: '☰';
+      background: var(--unnamed-color-ffffff);
+      color: var(--unnamed-color-62738a);
+      font-size: 3rem;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .close-menu:checked~nav{
+      /* visibility: visible; */
+      display: block;
+      margin-top: 15rem;
+      padding-top: 10rem;
+      top: 0;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+      content: '×';
+      width: 2rem;
+      height: 2rem;
+      visibility: visible;
+      z-index: 2;
+    }
+
       .front-cover{
         background-size: 210% 100%;
         background-position:70% ;
+      }
+      #button-for-mobile{
+        display: none;
       }
       .About-Us{
         width: 100vw;
@@ -90,7 +101,6 @@
         font-size: var(--media-font-18);
         text-align: center;
         margin-bottom: 3rem;
-        color: red;
       }
       .About-Us-Image{
         display: none;
@@ -100,17 +110,22 @@
         margin-bottom: 6.3rem;
       }
       .services{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         
+        
 
+      }
+      .services-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       .services-text h1{
         font-size: var(--media-font-30);
         width: 30rem;
         height: max-content;
-        margin-right: 0;
-        color: red;
       }
       .services-text p{
         font-size: var(--media-font-18);
@@ -118,6 +133,7 @@
         height: max-content;
       }
       .services-demonstration{
+        width: 36.8rem;
         flex-direction: column;
         margin-bottom: 5rem;
       }
@@ -126,7 +142,7 @@
         display: none;;
       }
       .contact{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
       }
       .contact-text h1{
@@ -137,16 +153,18 @@
         width: 35.7rem;
         height: 11rem;
       }
+      .content-contact{
+        gap: 0;
+      }
       #contact-form{
-        width: 36.1rem;
+        width: 100vw;
         height: max-content;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
       }
-      .form-fields{
-        width: 100%;
-      }
-      .form-fields textarea{
+      #textarea-field{
         width: 36.1rem;
       }
       #check-field{
@@ -174,5 +192,23 @@
       }
       .social-networks{
         flex-direction: column;
+      }
+      #button-version-mobile{
+        height: 10.4rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #button-for-desktop{
+        width: 20.1rem;
+        height: 4.9rem;
+        background-color: var(--unnamed-color-ff805c);
+        color: var(--unnamed-color-ffffff);
+        text-transform: uppercase;
+        font-family: var(--Roboto);
+        font-size: var(--button-mobile);
+        border: none;
+        border-radius: 2.5rem;
       }
 }

@@ -24,16 +24,18 @@
 
     <!--  -->
     <script src="assets/js/script.js" defer></script>
-
+    
     <header id="header" class="menu-content">
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+        
             <div>
-                <a href="#header" ><img src="assets/images/logo-cabecalho.svg" alt="Logo da empresa"></a>
+                <a onclick="getElementById('close-menu').checked = false;" href="#header" ><img src="assets/images/logo-cabecalho.svg" alt="Logo da empresa"></a>
             </div>
-            
-            <nav >
-                <ul class="header-menu">
+
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+            <nav>
+                <ul class="header-menu" onclick="getElementById('close-menu').checked = false;">
                     <li><a class="nav-a" href="#About-us">Sobre</a></li>
                     <li><a class="nav-a" href="#Services">Serviços</a></li>
                     <li><a class="nav-a" href="#contact">Contato</a></li>
@@ -45,8 +47,9 @@
                 <!-- <img src="assets/images/banner.jpg" alt=""> -->
                 <h1>Tenha um site<br>rápido, seguro e otimizado</h1>
                 <p>Solicite um orçamento sem compromisso agora mesmo</p>
-                <a href="#header">Solicitar</a>
+                <a href="#contact">Solicitar</a>
 
+                <button id="button-for-mobile">Ver versão mobile</button>
         </section>
         <section class="About-Us" id="About-us"> 
             <div class="About-Us-Image">
@@ -92,7 +95,7 @@
                     <form action="" id="contact-form">
                         <div class="form-fields">
                             <label for="nome" class="label-field">Nome *</label>
-                            <input type="text" id="nome" class="input-field">
+                            <input type="text" id="nome" class="input-field" required>
                         </div>
                         <div class="form-fields">
                             <label for="cidade" class="label-field">Cidade/UF</label>
@@ -100,7 +103,7 @@
                         </div>
                         <div class="form-fields">
                             <label for="telefone" class="label-field">Telefone *</label>
-                            <input type="tel" id="telefone" class="input-field">
+                            <input type="tel" id="telefone" class="input-field" required>
                         </div>
                         <div class="form-fields">
                             <label for="email" class="label-field">E-mail</label>
@@ -125,19 +128,25 @@
                     <address>
                         <div class="elements-contact">
                             <a href="https://api.whatsapp.com/send/?phone=5496538880">
+                                <div class="imagem-background">
                                 <img src="assets/images/icone-whatsapp.svg" alt="WhatsApp" title="Abrir no WhatsApp">
+                                </div>
                                 <p>54 9 9653 8880</p>
                             </a>
                         </div>
                         <div class="elements-contact">
                             <a href="tel:54996538880">
-                                <img src="assets/images/icone-telefone.svg" alt="Telefone" title="Abrir no telefone">
+                                <div class="imagem-background">
+                                    <img src="assets/images/icone-telefone.svg" alt="Telefone" title="Abrir no telefone">
+                                </div>
                                 <p>54 9 9653 8880</p>
                             </a>
                         </div>
                         <div class="elements-contact">
                             <a href="mailto:contato@cardume.digital">
-                                <img src="assets/images/icone-email.svg" alt="E-mail" title="Abrir E-mail">
+                                <div class="imagem-background">
+                                    <img src="assets/images/icone-email.svg" alt="E-mail" title="Abrir E-mail">
+                                </div>
                                 <p>contato@cardume.digital</p>
                             </a>
                         </div>
@@ -157,17 +166,20 @@
             </div>
             <div id="networks-links">
                 <div>
-                    <a href="">
+                    <a href="https://www.facebook.com/cardumeagencia">
                         <img src="assets/images/icone-facebook.svg" alt="Facebook" title="Abrir o Facebook">
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="https://www.instagram.com/cardume.digital/">
                         <img src="assets/images/icone-instagram.svg" alt="Instagram" title="Abrir o Instagram">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+    <div id="button-version-mobile">
+        <button id="button-for-desktop">Ver versão mobile</button>
+    </div>
 </body>
 </html>

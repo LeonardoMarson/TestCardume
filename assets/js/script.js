@@ -52,16 +52,16 @@ window.addEventListener('click', () => {
     }
 });
 
-// window.addEventListener("scroll", getScrollY);
-// function getScrollY(){
-//     let scrollY = window.scrollY;
+window.addEventListener("scroll", getScrollY);
+function getScrollY(){
+    let scrollY = window.scrollY;
     
-//     if(scrollY > 40){
-//         header.style.cssText = "height: 15rem; position: fixed; transition: height 0.1s linear; z-index: 1;";
-//     }
-//     else {
-//         header.style.cssText = "height: 21rem; transition: height 0.3s ease;";
-//     }
-// }
+    if(scrollY > 100){
+        header.style.cssText = "height: 15rem; position: fixed; transition: height 0.1s linear; z-index: 1;";
+    }
+    else{
+        header.style.cssText = "height: 21rem; transition: height 0.3s ease;";
+    }
+}
 
 
